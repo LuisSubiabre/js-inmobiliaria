@@ -27,7 +27,7 @@
         <a href="./propiedades_venta.html" class="navbar-item">
           En venta
         </a>
-        <a href="./propiedades_alquiler.html" class="navbar-item">
+        <a href="./propiedades_alquiler.html" class="navbar-item is-active">
           Alquiler
         </a>
       </div>
@@ -52,15 +52,9 @@
   </section>
 
   <section id="propiedades" class="m-4">
-    <h3 class="subtitle is-3">Propiedades en Venta</h3>
-    <div id="venta" class="grid is-col-min-12"></div>
-    <button class="button is-black">Ver todas las propiedades en venta</button>
-
-    <hr>
-
+   
     <h3 class="subtitle is-3">Propiedades en Alquiler</h3>
     <div id="alquiler" class="grid is-col-min-12"></div>
-    <button class="button is-black">Ver todas las propiedades en alquiler</button>
   </section>
 
 
@@ -70,8 +64,7 @@
   <script src="./assets/js/bulmaBurger.js"></script>
   <script src="./assets/js/main.js"></script>
   <script>
-    mostrarVenta(3);
-    mostrarAlquiler(3);
+    mostrarAlquiler();
   </script>
 </body>
 
