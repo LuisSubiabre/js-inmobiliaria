@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inmobiliaria Tritón</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item is-size-4" href="./index.html">Inmobiliaria Tritón</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBulma">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBulma" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          En venta
+        </a>
+        <a class="navbar-item">
+          Alquiler
+        </a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button id="dark"> <i class="fas fa-adjust"></i> Cambiar modo</button>
+        </div>
+      </div>
+    </div>
+
+
+  </nav>
+  <section class="hero is-medium hero-bg">
+    <div class="hero-body">
+      <div class="container has-text-centered ">
+        <p class="title has-text-primary-light is-size-1 ">Encuentra</p>
+        <p class="subtitle has-text-primary-light is-size-5 ">tu nueva propiedad</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="propiedades" class="m-4">
+    <h3 class="subtitle is-3">Propiedades en Venta</h3>
+    <div id="venta" class="grid is-col-min-12"></div>
+    <button class="button is-black">Ver todas las propiedades en venta</button>
+
+    <hr>
+
+    <h3 class="subtitle is-3">Propiedades en Alquiler</h3>
+    <div id="alquiler" class="grid is-col-min-12"></div>
+    <button class="button is-black">Ver todas las propiedades en alquiler</button>
+  </section>
+
+
+  <footer class="container">
+
+  </footer>
+  <script src="./assets/js/bulmaBurger.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    mostrarVenta(3);
+    mostrarAlquiler(3);
+  </script>
+</body>
+
+</html>
