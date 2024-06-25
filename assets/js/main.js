@@ -1,3 +1,4 @@
+/* Modo Oscuro-Claro*/
 const btnModo = document.getElementById("dark");
 const html = document.documentElement;
 const heroElement = document.querySelector('.hero-bg');
@@ -13,6 +14,7 @@ btnModo.addEventListener('click', () => {
         heroElement.style.filter = 'brightness(50%)';
     }
 });
+/* Modo Oscuro-Claro*/
 
 const propiedades_venta = [
     {
